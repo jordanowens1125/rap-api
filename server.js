@@ -47,6 +47,6 @@ app.get('/api/rappers/:rapperName',(request,response)=>{
 
 //where server listens for request
 //function to console port
-app.listen(PORT, ()=>{
+app.listen(process.env.PORT || PORT, ()=>{
     console.log(`Server running on port ${PORT}`)
 })
